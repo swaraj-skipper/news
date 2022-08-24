@@ -1,13 +1,13 @@
-import Display from './components/Display';
-import Navbar from './components/Navbar';
+import React from 'react'
+import Navbar from './Components/Navbar'
+import News from './Components/News'
+import './Components/Global.css';
 
-function App() {
+export default function App() {
   return (
-    <>
-    <Navbar/>
-    <Display/>
-    </>
-  );
+    <div>
+      <Navbar/>
+      <News/>
+    </div>
+  )
 }
-
-export default App;
