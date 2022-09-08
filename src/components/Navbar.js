@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
   return (
     <div>
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
               <div className="container-fluid">
                   <Link className="navbar-brand" to="/">Newms</Link>
                   <img src="favicon-32x32.png" alt="" />

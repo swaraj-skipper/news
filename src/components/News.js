@@ -108,7 +108,7 @@ export default function News(props) {
 
     return (
         <>
-            <h3 style={{ color: "white", marginLeft: "100px", marginTop:"20px" }}>Top Headlines - {capitalize(props.category)}</h3>
+            <h3 style={{ color: "white", marginLeft: "100px", marginTop:"5rem" }}>Top Headlines - {capitalize(props.category)}</h3>
             {!lomding && <Spinner />}
             <div className='container-fluid flexi my-3'>
 

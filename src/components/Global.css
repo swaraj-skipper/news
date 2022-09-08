@@ -1,5 +1,5 @@
 body{
-    background-color: #121926;
+    background-color: #181818;
     color: rgb(208, 205, 205);
 }
 
@@ -42,19 +42,17 @@ body{
     width: 4rem;
     /* width: 7rem; */
     /* background-color:#0a0a23; */
-    background-color: #121926;
+    background-color: hsl(0deg 0% 19%);
 }
 
 .butt:hover:enabled{
     color: white;
-    background-color: black;
+    background-color: #181818;
 }
 
-/* .butt:disabled{
-    color: black;
-    border-color: grey;
-    background-color: grey;
-} */
+.butt:disabled{
+    background-color: #181818;
+}
 
 .butt:disabled:hover{
     cursor:not-allowed;
@@ -78,7 +76,7 @@ body{
     width: 100%;
     padding: 10px;
     margin: 5px;
-    background-color: #001523;
+    background-color: #181818;
 }
 
 .container{
