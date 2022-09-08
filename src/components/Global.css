@@ -1,7 +1,132 @@
+body{
+    background-color: #121926;
+    color: rgb(208, 205, 205);
+}
+
 .card-text{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
+}
+
+.card{
+    position: relative;
+}
+
+.pici{
+    width: 20%;
+}
+.imgi{
+    width: 100%;
+}
+
+.btn{
+    position: absolute;
+    bottom: 5px;
+}
+
+.boxi{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.butt{
+    color: black;
+    border:none; 
+    /* border-radius:50%;  */
+    padding:10px;
+    height: 100% !important;
+    width: 4rem;
+    /* width: 7rem; */
+    /* background-color:#0a0a23; */
+    background-color: #121926;
+}
+
+.butt:hover:enabled{
+    color: white;
+    background-color: black;
+}
+
+/* .butt:disabled{
+    color: black;
+    border-color: grey;
+    background-color: grey;
+} */
+
+.butt:disabled:hover{
+    cursor:not-allowed;
+}
+
+/* .beech{
+    display: ;
+} */
+
+/* self design  */
+.news-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cont{
+    display: flex;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    background-color: #001523;
+}
+
+.container{
+    width: 100% !important;
+    background-color: pink;
+}
+
+.cardi{
+    width: 80%;
+    /* position: absolute; */
+    bottom: 2px;
+}
+
+.title{
+    text-decoration: none;
+    color: white;
+}
+
+
+.flexing{
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.source{
+    padding: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.bottom{
+    color: grey;
+}
+
+.flexi{
+    display: flex;
+    
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
