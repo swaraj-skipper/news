@@ -33,12 +33,13 @@ export default function News(props) {
     const fetchDataFromApi = (pageX) => {
         // console.log(pageX)
         props.setProgress(20)
-        let url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${props.apiKey}&page=${pageX}&pageSize=${pageSize}`;
         setLomding(false)
+        let url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${props.apiKey}&page=${pageX}&pageSize=${pageSize}`;
         // props.setProgress(50)
         fetch(url).then(resp => resp.json())
-            .then(resp => setPost(resp)).then(props.setProgress(50)).then(setLomding(true)).catch((err) => console.log("bro error it is", err))
+            .then(resp => setPost(resp)).then(props.setProgress(50)).catch((err) => console.log("bro error it is", err))
         document.title = `Newms - ${capitalize(props.category)}`
+        setLomding(true)
         props.setProgress(100)
         // setTotalResult(20)
         
@@ -108,7 +109,7 @@ export default function News(props) {
 
     return (
         <>
-            <h3 style={{ color: "white", marginLeft: "100px", marginTop:"5rem" }}>Top Headlines - {capitalize(props.category)}</h3>
+            <h3 style={{ color: "white", display:"flex",alignItems:"center",justifyContent:"center", marginTop:"5rem" }}>Top Headlines - {capitalize(props.category)}</h3>
             {!lomding && <Spinner />}
             <div className='container-fluid flexi my-3'>
 
@@ -141,6 +142,10 @@ export default function News(props) {
                     <button disabled={page >= post.totalResults / pageSize} onClick={handleNextClick} className="butt">&rarr;</button>
                 </div>
 
+            </div>
+            <div className="boxi-phone">
+                <button disabled={page<=1} onClick={handlePrevClick} className="butt-phone">&larr;</button>
+                <button disabled={page >= post.totalResults / pageSize} onClick={handleNextClick} className="butt-phone">&rarr;</button>
             </div>
         </>
     )
