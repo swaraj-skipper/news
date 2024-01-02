@@ -18,7 +18,7 @@ export default function App() {
   const [progress, setProgress] = useState(20)
 
   // let apiKey = process.env.NEWS_API
-  let apiKey = "aa7ac54820bd4532b3ca47c02fca65a2";
+  let apiKey = "*";
 
   return (
     <div>
